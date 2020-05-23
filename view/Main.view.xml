@@ -5,7 +5,7 @@
 				<Page id="page" title="{i18n>title}">
 					<content><TileContainer>
 					        <tiles>
-					            <CustomTile removable="false">
+					            <CustomTile removable="false" press="goToTwitterProfile">
 					                <content>
 					                    <Image width="140px" height="140px" src="./pictures/twitter.png"/>
 					                </content>
