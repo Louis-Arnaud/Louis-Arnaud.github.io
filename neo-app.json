@@ -1,6 +1,0 @@
-{
-  "routes": [
-  ],
-  "welcomeFile": "/webapp/index.html",
-  "sendWelcomeFileRedirect": true
-}
