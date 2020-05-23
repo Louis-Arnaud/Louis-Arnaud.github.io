@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lab.PresentationSite.controller.Main" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					    <TileContainer editable="true" allowAdd="true" id="container0">
+					        <tiles>
+					            <StandardTile title="Github page" info="Info" infoState="Success" id="tile0"/>
+					            <StandardTile title="This page is a test" info="online soon !" activeIcon="sap-icon://customer" number="123" numberUnit="eur" infoState="Success" id="tile1"/></tiles>
+					    </TileContainer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
