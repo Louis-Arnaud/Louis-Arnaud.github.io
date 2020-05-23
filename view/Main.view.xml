@@ -5,8 +5,13 @@
 				<Page id="page" title="{i18n>title}">
 					<content><TileContainer>
 					        <tiles>
-					            <StandardTile title="Github page" info="Info" infoState="Success" id="tile0" removable="false" press="goToGithubPage"/>
-					            <StandardTile title="This page is a test" info="online soon !" activeIcon="sap-icon://customer" number="123" numberUnit="eur" infoState="Success" id="tile1" removable="false"/></tiles>
+					            <CustomTile removable="false">
+					                <content>
+					                    <Image width="140px" height="140px" src="./pictures/twitter.png"/>
+					                </content>
+					            </CustomTile>
+					            <StandardTile title="Github page" info="github.com/Louis-Arnaud" infoState="Success" removable="false" press="goToGithubPage"/>
+					            <StandardTile title="SAP Profile" info="people.sap.com/lab_pm" activeIcon="sap-icon://sap-logo-shape" infoState="Success" removable="false" icon="sap-icon://sap-logo-shape" press="goToSapProfile"/></tiles>
 					    </TileContainer>
 					</content>
 				</Page>
