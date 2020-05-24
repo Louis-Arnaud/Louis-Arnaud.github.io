@@ -2,7 +2,7 @@
 	"Infos": {
 		"FirstName": "Louis-Arnaud",
 		"LastName": "Bouquin",
-		"PictureUrl": "Pictures/Moi.png",
+		"PictureUrl": "/webapp/Pictures/Moi.png",
 		"Title": "SAP Developer @ Progress Management"
 	},
 	"skills": [{
