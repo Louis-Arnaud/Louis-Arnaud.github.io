@@ -1,17 +1,43 @@
-<mvc:View controllerName="lab.PresentationSite.controller.Home" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Page id="page" title="{i18n>title}">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
+	<Page id="homePageId" title="{i18n>title}">
 		<content>
-		<!--	<TileContainer>-->
-		<!--		<tiles>-->
-		<!--			<CustomTile removable="false" press="goToTwitterProfile">-->
-		<!--				<content>-->
-		<!--					<Image width="140px" height="140px" src="./pictures/twitter.png"/>-->
-		<!--				</content>-->
-		<!--			</CustomTile>-->
-		<!--			<StandardTile title="Github page" info="github.com/Louis-Arnaud" infoState="Success" removable="false" press="goToGithubPage"/>-->
-		<!--			<StandardTile title="SAP Profile" info="people.sap.com/lab_pm" activeIcon="sap-icon://sap-logo-shape" infoState="Success" removable="false"-->
-		<!--				icon="sap-icon://sap-logo-shape" press="goToSapProfile"/></tiles>-->
-		<!--	</TileContainer>-->
+			<QuickViewCard id="quickViewId">
+			<QuickViewPage
+				id="quickViewPageId"
+				pageId="homePageId"
+				header="{i18n>Contact information}"
+				
+				icon="{icon}"
+				title="{title}"
+				titleUrl="{titleUrl}"
+				description="{description}">
+				<QuickViewGroup heading="{heading}">
+					<QuickViewGroupElement
+						label="{label}"
+						value="{value}"
+						url="{url}"
+						type="{elementType}"
+						pageLinkId="{pageLinkId}"
+						emailSubject="{emailSubject}"
+						target="{target}">
+					</QuickViewGroupElement>
+				</QuickViewGroup>
+			</QuickViewPage>
+		</QuickViewCard>
+			<Image
+				src="https://media-exp1.licdn.com/dms/image/C4D03AQF7-IWh5eDEtg/profile-displayphoto-shrink_200_200/0?e=1596067200&amp;v=beta&amp;t=V4orGrivMetzB3r7B_VfURIpTsouJUbOVvPZltbGxaA"
+				width="140px" height="140px" id="Photo"/>
+			<List noDataText="Aucune donnée" id="list3">
+				<items>
+					<CustomListItem>
+						<Panel width="auto" expandable="true" expanded="true" id="panel1">
+							<content>
+								<Text text="Panel Content" id="text3"/>
+							</content>
+						</Panel>
+					</CustomListItem>
+				</items>
+			</List>
 		</content>
 	</Page>
 </mvc:View>
