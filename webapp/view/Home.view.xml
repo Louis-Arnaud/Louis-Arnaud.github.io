@@ -1,9 +1,13 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards" xmlns:l="sap.ui.layout" controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards" xmlns:l="sap.ui.layout"
+	controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
 	<Page id="homePageId" title="{i18n>title}">
 		<content>
-			<Image
-				src="https://media-exp1.licdn.com/dms/image/C4D03AQF7-IWh5eDEtg/profile-displayphoto-shrink_200_200/0?e=1596067200&amp;v=beta&amp;t=V4orGrivMetzB3r7B_VfURIpTsouJUbOVvPZltbGxaA"
-				width="140px" height="140px" id="Photo"/>
+			<Panel xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0">
+				<content>
+					<Avatar src="{/Infos/PictureUrl}" displaySize="XL" displayShape="Circle" showBorder="true"/>
+					<Text text="{/Infos/Title}"/>
+				</content>
+			</Panel>
 			<List noDataText="Aucune donnée" id="list3">
 				<items>
 					<CustomListItem>
