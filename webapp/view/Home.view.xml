@@ -8,12 +8,23 @@
 					<Text text="{/Infos/Title}"/>
 				</content>
 			</Panel>
-			<List noDataText="Aucune donnée" id="list3">
+			<List id="workExperienceListId" items="{ path: '/WorkExperience'}">
 				<items>
 					<CustomListItem>
 						<Panel width="auto" expandable="true" expanded="true" id="panel1">
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title text="{Company}"/>
+									<ToolbarSpacer/>
+									<Button icon="sap-icon://settings"/>
+									<Button icon="sap-icon://drop-down-list"/>
+								</OverflowToolbar>
+							</headerToolbar>
 							<content>
-								<Text text="Panel Content" id="text3"/>
+								<l:HorizontalLayout>
+									<Image src="{CompanyLogo}" width="10em"/>
+								</l:HorizontalLayout>
+								<Text text="{Company}"/>
 							</content>
 						</Panel>
 					</CustomListItem>

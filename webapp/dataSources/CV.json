@@ -5,9 +5,23 @@
 		"PictureUrl": "/webapp/Pictures/Moi.png",
 		"Title": "SAP Developer and Team Leader @ Progress Management"
 	},
+	"WorkExperience": [ 
+		{ 
+		"PeriodFrom": "2006-09-01", 
+		"PeriodTo": "2008-04-30",
+		"Company": "BT Global Services",
+		"CompanyLogo": "/webapp/Pictures/BTGlobalServices.jpg",
+		"Position": "Junior ABAP Developer"
+		}
+	],
 	"skills": [{
 		"SkillTitle": "SAPUI5",
 		"SkillSubTitle": "Fiori apps development",
 		"SkillImageUrl": "https://sapui5.hana.ondemand.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png"
+	},
+	{
+		"SkillTitle": "ABAP",
+		"SkillSubTitle": "S/4 HANA development",
+		"SkillImageUrl": "/webapp/Pictures/ABAP.jpg"
 	}]
 }
