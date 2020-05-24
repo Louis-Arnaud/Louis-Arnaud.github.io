@@ -1,29 +1,6 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards" xmlns:l="sap.ui.layout" controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
 	<Page id="homePageId" title="{i18n>title}">
 		<content>
-			<QuickViewCard id="quickViewId">
-			<QuickViewPage
-				id="quickViewPageId"
-				pageId="homePageId"
-				header="{i18n>Contact information}"
-				
-				icon="{icon}"
-				title="{title}"
-				titleUrl="{titleUrl}"
-				description="{description}">
-				<QuickViewGroup heading="{heading}">
-					<QuickViewGroupElement
-						label="{label}"
-						value="{value}"
-						url="{url}"
-						type="{elementType}"
-						pageLinkId="{pageLinkId}"
-						emailSubject="{emailSubject}"
-						target="{target}">
-					</QuickViewGroupElement>
-				</QuickViewGroup>
-			</QuickViewPage>
-		</QuickViewCard>
 			<Image
 				src="https://media-exp1.licdn.com/dms/image/C4D03AQF7-IWh5eDEtg/profile-displayphoto-shrink_200_200/0?e=1596067200&amp;v=beta&amp;t=V4orGrivMetzB3r7B_VfURIpTsouJUbOVvPZltbGxaA"
 				width="140px" height="140px" id="Photo"/>
@@ -38,6 +15,61 @@
 					</CustomListItem>
 				</items>
 			</List>
+			<Carousel height="auto" pages="{ path: '/skills' }">
+				<f:Card>
+					<f:header>
+						<cards:Header title="{SkillTitle}" subtitle="{SkillSubTitle}" iconSrc="{SkillImageUrl}" iconDisplayShape="Square"/>
+					</f:header>
+					<f:content>
+						<l:VerticalLayout class="sapUiContentPadding" width="100%">
+							<l:BlockLayout>
+								<l:BlockLayoutRow>
+									<l:BlockLayoutCell title="Main Information" width="1">
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Supplier:"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>SupplierName}"/>
+										</HBox>
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Main Category:"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>MainCategory}"/>
+										</HBox>
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Category:"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>Category}"/>
+										</HBox>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell title="Specifications" width="1">
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Width (cm)"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>Width}"/>
+										</HBox>
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Height (cm)"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>Height}"/>
+										</HBox>
+										<HBox class="sapUiTinyMarginBottom">
+											<Label text="Weight (kg)"/>
+										</HBox>
+										<HBox class="sapUiSmallMarginBottom">
+											<Text text="{products>WeightMeasure}"/>
+										</HBox>
+									</l:BlockLayoutCell>
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</l:VerticalLayout>
+					</f:content>
+				</f:Card>
+			</Carousel>
 		</content>
 	</Page>
 </mvc:View>
