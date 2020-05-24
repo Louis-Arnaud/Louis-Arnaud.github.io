@@ -1,7 +1,16 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
+sap.ui.define([
+	"sap/ui/core/mvc/Controller",
+	"../model/formatter"
+], function (Controller, formatter) {
 	"use strict";
-	return Controller.extend("lab.PresentationSite.controller.Main", {
-		onInit: function () {},
+
+	return Controller.extend("lab.PresentationSite.controller.App", {
+
+		formatter: formatter,
+
+		onInit: function () {
+
+		},
 		goToGithubPage: function (oEvent) {
 			window.location.replace("https://github.com/Louis-Arnaud");
 		},
