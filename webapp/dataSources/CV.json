@@ -9,18 +9,20 @@
 	"WorkExperience": [
 	    { 
 		"PeriodFrom": "2008-05-01", 
-		"PeriodTo": "Current",
+		"PeriodTo": "2008-05-01",
 		"Company": "Progress Management",
 		"website": "https://www.progressmanagement.com",
 		"CompanyLogo": "/webapp/Pictures/ProgressManagement.png",
-		"Position": "Senior Manager"
+		"Position": "Senior Manager",
+		"Current": "true"
 		},
 		{ 
 		"PeriodFrom": "2006-09-01", 
 		"PeriodTo": "2008-04-30",
 		"Company": "BT Global Services",
 		"CompanyLogo": "/webapp/Pictures/BTGlobalServices.jpg",
-		"Position": "Junior ABAP Developer"
+		"Position": "Junior ABAP Developer",
+		"Current": "false"
 		}
 	],
 	"skills": [{

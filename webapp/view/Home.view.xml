@@ -17,13 +17,14 @@
 				</headerToolbar>
 				<items>
 					<CustomListItem>
-						<Panel width="auto" expandable="true" expanded="true" id="panel1">
+						<Panel width="auto" expandable="true" expanded="false" id="workExperiencePanelId">
 							<headerToolbar>
 								<OverflowToolbar>
 									<Title text="{Company}"/>
 									<ToolbarSpacer/>
-									<Button icon="sap-icon://settings"/>
-									<Button icon="sap-icon://drop-down-list"/>
+									<Text visible="{= ${Current} === 'true' ? false : true}"
+										text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} {i18n>to} {path: 'PeriodTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { pattern: 'yyyy-MM-dd' } }}"/>
+									<Text visible="{= ${Current} === 'true' ? true : false}" text="{i18n>currentPosition}"/>
 								</OverflowToolbar>
 							</headerToolbar>
 							<content>
