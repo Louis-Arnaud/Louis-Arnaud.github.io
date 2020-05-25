@@ -3,9 +3,18 @@
 		"FirstName": "Louis-Arnaud",
 		"LastName": "Bouquin",
 		"PictureUrl": "/webapp/Pictures/Moi.png",
+		"FullPictureUrl": "/webapp/Pictures/MeAndFamily.jpg",
 		"Title": "SAP Developer and Team Leader @ Progress Management"
 	},
-	"WorkExperience": [ 
+	"WorkExperience": [
+	    { 
+		"PeriodFrom": "2008-05-01", 
+		"PeriodTo": "Current",
+		"Company": "Progress Management",
+		"website": "https://www.progressmanagement.com",
+		"CompanyLogo": "/webapp/Pictures/ProgressManagement.png",
+		"Position": "Senior Manager"
+		},
 		{ 
 		"PeriodFrom": "2006-09-01", 
 		"PeriodTo": "2008-04-30",

@@ -4,7 +4,7 @@
 		<content>
 			<Panel xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0">
 				<content>
-					<Avatar src="{/Infos/PictureUrl}" displaySize="XL" displayShape="Circle" showBorder="true"/>
+					<Avatar src="{/Infos/PictureUrl}" press="OnAvatarPress" displaySize="XL" displayShape="Circle" showBorder="true"/>
 					<Text text="{/Infos/Title}"/>
 				</content>
 			</Panel>

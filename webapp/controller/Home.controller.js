@@ -11,6 +11,20 @@ sap.ui.define([
 		onInit: function () {
 
 		},
+		
+		OnAvatarPress: function(oEvent) {
+			
+			var sImageUrl = this.getView().getModel().getProperty("/Infos/FullPictureUrl");
+			
+			var oImageDialog = new sap.m.LightBox();
+			
+			oImageDialog.addImageContent(
+					new sap.m.LightBoxItem({ imageSrc: sImageUrl })
+				);
+			oImageDialog.open();
+			
+		},
+		
 		goToGithubPage: function (oEvent) {
 			window.location.replace("https://github.com/Louis-Arnaud");
 		},
