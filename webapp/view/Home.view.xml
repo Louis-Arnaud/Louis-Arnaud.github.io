@@ -9,6 +9,12 @@
 				</content>
 			</Panel>
 			<List id="workExperienceListId" items="{ path: '/WorkExperience'}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>workExperience}" level="H2"/>
+						<ToolbarSpacer/>
+					</OverflowToolbar>
+				</headerToolbar>
 				<items>
 					<CustomListItem>
 						<Panel width="auto" expandable="true" expanded="true" id="panel1">
