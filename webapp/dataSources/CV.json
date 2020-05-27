@@ -15,7 +15,7 @@
 		"CompanyLogo": "/webapp/Pictures/ProgressManagement.png",
 		"Position": "Senior Manager",
 		"type": "Permanent contract",
-		"Current": "true"
+		"Current": true
 		},
 		{ 
 		"PeriodFrom": "2006-09-01", 
@@ -24,7 +24,7 @@
 		"CompanyLogo": "/webapp/Pictures/BTGlobalServices.jpg",
 		"Position": "Junior ABAP Developer",
 		"type": "Permanent contract",
-		"Current": "false"
+		"Current": false
 		},
 				{ 
 		"PeriodFrom": "2006-07-31", 
@@ -33,7 +33,7 @@
 		"CompanyLogo": "/webapp/Pictures/McKesson.png",
 		"Position": "Junior Project Leader",
 		"type": "Internship",
-		"Current": "false"
+		"Current": false
 		}
 	],
 	"skills": [{
