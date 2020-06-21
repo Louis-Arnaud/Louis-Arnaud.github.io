@@ -1,98 +1,194 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards" xmlns:l="sap.ui.layout"
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:cards="sap.f.cards" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form"
 	controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
-	<Page id="homePageId" title="{i18n>title}">
+	<Page id="homePageId" title="{/Infos/Title}">
 		<content>
-			<Panel xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0">
-				<content>
-					<Avatar src="{/Infos/PictureUrl}" press="OnAvatarPress" displaySize="XL" displayShape="Circle" showBorder="true"/>
-					<Text text="{/Infos/Title}"/>
-				</content>
-			</Panel>
-			<List id="workExperienceListId" items="{ path: '/WorkExperience'}">
-				<headerToolbar>
-					<OverflowToolbar>
-						<Title text="{i18n>workExperience}" level="H2"/>
-						<ToolbarSpacer/>
-					</OverflowToolbar>
-				</headerToolbar>
-				<items>
-					<CustomListItem>
-						<Panel width="auto" expandable="true" expanded="{= ${Current} === true ? true : false}" id="workExperiencePanelId">
-							<headerToolbar>
-								<OverflowToolbar>
-									<Title text="{Company}"/>
-									<ToolbarSpacer/>
-									<Text visible="{= ${Current} === true ? false : true}"
-										text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} {i18n>to} {path: 'PeriodTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { pattern: 'yyyy-MM-dd' } }}"/>
-									<Text visible="{= ${Current} === true ? true : false}" 
-									text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} ({i18n>currentPosition})"/>
-								</OverflowToolbar>
-							</headerToolbar>
-							<content>
-								<l:HorizontalLayout>
-									<Image src="{CompanyLogo}" width="10em"/>
-								</l:HorizontalLayout>
-								<Text text="{Company}"/>
-							</content>
-						</Panel>
-					</CustomListItem>
-				</items>
-			</List>
-			<Carousel height="auto" pages="{ path: '/skills' }">
-				<f:Card>
-					<f:header>
-						<cards:Header title="{SkillTitle}" subtitle="{SkillSubTitle}" iconSrc="{SkillImageUrl}" iconDisplayShape="Square"/>
-					</f:header>
-					<f:content>
-						<l:VerticalLayout class="sapUiContentPadding" width="100%">
-							<l:BlockLayout>
-								<l:BlockLayoutRow>
-									<l:BlockLayoutCell title="Main Information" width="1">
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Supplier:"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>SupplierName}"/>
-										</HBox>
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Main Category:"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>MainCategory}"/>
-										</HBox>
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Category:"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>Category}"/>
-										</HBox>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell title="Specifications" width="1">
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Width (cm)"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>Width}"/>
-										</HBox>
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Height (cm)"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>Height}"/>
-										</HBox>
-										<HBox class="sapUiTinyMarginBottom">
-											<Label text="Weight (kg)"/>
-										</HBox>
-										<HBox class="sapUiSmallMarginBottom">
-											<Text text="{products>WeightMeasure}"/>
-										</HBox>
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-							</l:BlockLayout>
-						</l:VerticalLayout>
-					</f:content>
-				</f:Card>
-			</Carousel>
+			<f:Card width="500px" class="sapUiMediumMargin">
+				<f:header>
+					<cards:Header title="{i18n>contactInformation}"/>
+				</f:header>
+				<f:content>
+					<Panel xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0">
+						<content>
+							<HBox>
+								<Avatar src="{/Infos/PictureUrl}" press="OnAvatarPress" displaySize="XL" displayShape="Circle" showBorder="true"/>
+								<form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12"
+									adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+									singleContainerFullSize="false">
+									<form:content>
+										<Label text="{i18n>firstName}"/>
+										<Text text="{/Infos/FirstName}"/>
+										<Label text="{i18n>lastName}"/>
+										<Text text="{/Infos/LastName}"/>
+									</form:content>
+								</form:SimpleForm>
+							</HBox>
+						</content>
+					</Panel>
+				</f:content>
+			</f:Card>
+			<f:Card width="800px" class="sapUiMediumMargin">
+				<f:header>
+					<cards:Header title="{i18n>workExperience}"/>
+				</f:header>
+				<f:content>
+					<List id="workExperienceListId" items="{ path: '/WorkExperience'}">
+						<items>
+							<CustomListItem>
+								<Panel width="auto" expandable="true" expanded="{= ${Current} === true ? true : false}" id="workExperiencePanelId">
+									<headerToolbar>
+										<OverflowToolbar>
+											<Title text="{Position} @ {Company}"/>
+											<ToolbarSpacer/>
+											<Text visible="{= ${Current} === true ? false : true}"
+												text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} {i18n>to} {path: 'PeriodTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { pattern: 'yyyy-MM-dd' } }}"/>
+											<Text visible="{= ${Current} === true ? true : false}"
+												text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} ({i18n>currentPosition})"/>
+										</OverflowToolbar>
+									</headerToolbar>
+									<content>
+										<l:HorizontalLayout>
+											<Image src="{CompanyLogo}" width="10em" press="OnCompanyPress"/>
+										</l:HorizontalLayout>
+										<Text text="{Company}"/>
+									</content>
+								</Panel>
+							</CustomListItem>
+						</items>
+					</List>
+				</f:content>
+			</f:Card>
+			<!--<Page id="homePageId" title="{i18n>title}">-->
+			<!--	<content>-->
+			<!--		<Panel xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0">-->
+			<!--			<content>-->
+			<!--				<Avatar src="{/Infos/PictureUrl}" press="OnAvatarPress" displaySize="XL" displayShape="Circle" showBorder="true"/>-->
+			<!--				<Text text="{/Infos/Title}"/>-->
+			<!--			</content>-->
+			<!--		</Panel>-->
+			<!--		<f:GridContainer>-->
+			<!--			<f:layout>-->
+			<!--				<f:GridContainerSettings rowSize="5rem" columnSize="5rem" gap="1rem"/>-->
+			<!--			</f:layout>-->
+			<!--			<f:layoutS>-->
+			<!--				<f:GridContainerSettings rowSize="5rem" columnSize="5rem" gap="0.5rem"/>-->
+			<!--			</f:layoutS>-->
+			<!--			<f:Card width="500px">-->
+			<!--				<f:header>-->
+			<!--					<cards:Header title="{i18n>workExperience}"/>-->
+			<!--				</f:header>-->
+			<!--				<f:content>-->
+			<!--					<List id="workExperienceListId" items="{ path: '/WorkExperience'}">-->
+			<!--						<items>-->
+			<!--							<CustomListItem>-->
+			<!--								<Panel width="auto" expandable="true" expanded="{= ${Current} === true ? true : false}" id="workExperiencePanelId">-->
+			<!--									<headerToolbar>-->
+			<!--										<OverflowToolbar>-->
+			<!--											<Title text="{Position} @ {Company}"/>-->
+			<!--											<ToolbarSpacer/>-->
+			<!--											<Text visible="{= ${Current} === true ? false : true}"-->
+			<!--												text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} {i18n>to} {path: 'PeriodTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { pattern: 'yyyy-MM-dd' } }}"/>-->
+			<!--											<Text visible="{= ${Current} === true ? true : false}"-->
+			<!--												text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} ({i18n>currentPosition})"/>-->
+			<!--										</OverflowToolbar>-->
+			<!--									</headerToolbar>-->
+			<!--									<content>-->
+			<!--										<l:HorizontalLayout>-->
+			<!--											<Image src="{CompanyLogo}" width="10em" press="OnCompanyPress"/>-->
+			<!--										</l:HorizontalLayout>-->
+			<!--										<Text text="{Company}"/>-->
+			<!--									</content>-->
+			<!--								</Panel>-->
+			<!--							</CustomListItem>-->
+			<!--						</items>-->
+			<!--					</List>-->
+			<!--				</f:content>-->
+			<!--			</f:Card>-->
+			<!--		</f:GridContainer>-->
+			<!--<List id="workExperienceListId" items="{ path: '/WorkExperience'}">-->
+			<!--	<headerToolbar>-->
+			<!--		<OverflowToolbar>-->
+			<!--			<Title text="{i18n>workExperience}" level="H2"/>-->
+			<!--			<ToolbarSpacer/>-->
+			<!--		</OverflowToolbar>-->
+			<!--	</headerToolbar>-->
+			<!--	<items>-->
+			<!--		<CustomListItem>-->
+			<!--			<Panel width="auto" expandable="true" expanded="{= ${Current} === true ? true : false}" id="workExperiencePanelId">-->
+			<!--				<headerToolbar>-->
+			<!--					<OverflowToolbar>-->
+			<!--						<Title text="{Position} @ {Company}"/>-->
+			<!--						<ToolbarSpacer/>-->
+			<!--						<Text visible="{= ${Current} === true ? false : true}"-->
+			<!--							text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} {i18n>to} {path: 'PeriodTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short', source: { pattern: 'yyyy-MM-dd' } }}"/>-->
+			<!--						<Text visible="{= ${Current} === true ? true : false}"-->
+			<!--							text="{i18n>from} {path: 'PeriodFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' , source: { pattern: 'yyyy-MM-dd' }}} ({i18n>currentPosition})"/>-->
+			<!--					</OverflowToolbar>-->
+			<!--				</headerToolbar>-->
+			<!--				<content>-->
+			<!--					<l:HorizontalLayout>-->
+			<!--						<Image src="{CompanyLogo}" width="10em" press="OnCompanyPress"/>-->
+			<!--					</l:HorizontalLayout>-->
+			<!--					<Text text="{Company}"/>-->
+			<!--				</content>-->
+			<!--			</Panel>-->
+			<!--		</CustomListItem>-->
+			<!--	</items>-->
+			<!--</List>-->
+			<!--		<Carousel height="auto" pages="{ path: '/skills' }">-->
+			<!--			<f:Card>-->
+			<!--				<f:header>-->
+			<!--					<cards:Header title="{SkillTitle}" subtitle="{SkillSubTitle}" iconSrc="{SkillImageUrl}" iconDisplayShape="Square"/>-->
+			<!--				</f:header>-->
+			<!--				<f:content>-->
+			<!--					<l:VerticalLayout class="sapUiContentPadding" width="100%">-->
+			<!--						<l:BlockLayout>-->
+			<!--							<l:BlockLayoutRow>-->
+			<!--								<l:BlockLayoutCell title="Main Information" width="1">-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Supplier:"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>SupplierName}"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Main Category:"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>MainCategory}"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Category:"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>Category}"/>-->
+			<!--									</HBox>-->
+			<!--								</l:BlockLayoutCell>-->
+			<!--								<l:BlockLayoutCell title="Specifications" width="1">-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Width (cm)"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>Width}"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Height (cm)"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>Height}"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiTinyMarginBottom">-->
+			<!--										<Label text="Weight (kg)"/>-->
+			<!--									</HBox>-->
+			<!--									<HBox class="sapUiSmallMarginBottom">-->
+			<!--										<Text text="{products>WeightMeasure}"/>-->
+			<!--									</HBox>-->
+			<!--								</l:BlockLayoutCell>-->
+			<!--							</l:BlockLayoutRow>-->
+			<!--						</l:BlockLayout>-->
+			<!--					</l:VerticalLayout>-->
+			<!--				</f:content>-->
+			<!--			</f:Card>-->
+			<!--		</Carousel>-->
 		</content>
 	</Page>
 </mvc:View>

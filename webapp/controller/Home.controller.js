@@ -11,20 +11,29 @@ sap.ui.define([
 		onInit: function () {
 
 		},
-		
-		OnAvatarPress: function(oEvent) {
-			
+
+		OnAvatarPress: function (oEvent) {
+
 			var sImageUrl = this.getView().getModel().getProperty("/Infos/FullPictureUrl");
-			
+
 			var oImageDialog = new sap.m.LightBox();
-			
+
 			oImageDialog.addImageContent(
-					new sap.m.LightBoxItem({ imageSrc: sImageUrl })
-				);
+				new sap.m.LightBoxItem({
+					imageSrc: sImageUrl
+				})
+			);
 			oImageDialog.open();
-			
+
 		},
-		
+
+		OnCompanyPress: function (oEvent) {
+			var oWorkExperience = oEvent.getSource().getBinding("src").getContext().getObject();
+			if (oWorkExperience.Website !== "") {
+				window.location.replace(oWorkExperience.Website);
+			}
+		},
+
 		goToGithubPage: function (oEvent) {
 			window.location.replace("https://github.com/Louis-Arnaud");
 		},

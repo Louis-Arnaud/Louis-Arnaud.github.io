@@ -8,14 +8,25 @@
 	},
 	"WorkExperience": [
 	    { 
-		"PeriodFrom": "2008-05-01", 
+		"PeriodFrom": "2019-10-01", 
 		"PeriodTo": "",
 		"Company": "Progress Management",
-		"website": "https://www.progressmanagement.com",
+		"Website": "https://www.progressmanagement.com",
 		"CompanyLogo": "/webapp/Pictures/ProgressManagement.png",
 		"Position": "Senior Manager",
-		"type": "Permanent contract",
-		"Current": true
+		"Type": "Permanent contract",
+		"Current": true,
+		"Description": " "
+		},
+	    { 
+		"PeriodFrom": "2008-05-01", 
+		"PeriodTo": "2019-09-30",
+		"Company": "Progress Management",
+		"Website": "https://www.progressmanagement.com",
+		"CompanyLogo": "/webapp/Pictures/ProgressManagement.png",
+		"Position": "Manager",
+		"Type": "Permanent contract",
+		"Current": false
 		},
 		{ 
 		"PeriodFrom": "2006-09-01", 
@@ -23,7 +34,7 @@
 		"Company": "BT Global Services",
 		"CompanyLogo": "/webapp/Pictures/BTGlobalServices.jpg",
 		"Position": "Junior ABAP Developer",
-		"type": "Permanent contract",
+		"Type": "Permanent contract",
 		"Current": false
 		},
 				{ 
@@ -32,7 +43,7 @@
 		"Company": "McKesson",
 		"CompanyLogo": "/webapp/Pictures/McKesson.png",
 		"Position": "Junior Project Leader",
-		"type": "Internship",
+		"Type": "Internship",
 		"Current": false
 		}
 	],
