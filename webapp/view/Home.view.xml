@@ -2,7 +2,7 @@
 	controllerName="lab.PresentationSite.controller.Home" displayBlock="true">
 	<Page id="homePageId" title="{/Infos/Title}">
 		<content>
-			<f:Card width="500px" class="sapUiMediumMargin">
+			<f:Card width="400px" class="sapUiMediumMargin">
 				<f:header>
 					<cards:Header title="{i18n>contactInformation}"/>
 				</f:header>
@@ -26,7 +26,7 @@
 					</Panel>
 				</f:content>
 			</f:Card>
-			<f:Card width="800px" class="sapUiMediumMargin">
+			<f:Card width="700px" class="sapUiMediumMargin">
 				<f:header>
 					<cards:Header title="{i18n>workExperience}"/>
 				</f:header>
