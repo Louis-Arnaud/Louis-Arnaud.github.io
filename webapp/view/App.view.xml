@@ -3,6 +3,6 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Shell appWidthLimited="false">
-		<App id="idApp"/>
+		<App id="app"/>
 	</Shell>
 </mvc:View>

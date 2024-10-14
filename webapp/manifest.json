@@ -81,7 +81,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "viewPath": "lab.PresentationSite.view",
-                "controlId": "idApp",
+                "controlId": "app",
                 "controlAggregation": "pages",
                 "async": true
             },
