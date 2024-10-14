@@ -1,0 +1,215 @@
+{
+  "name": "Louis-Arnaud BOUQUIN",
+  "title": "SAP Developer and Team Leader @ VISEO",
+  "birth_date": "1983-10-03",
+  "start_experience_date": "2006-09-01",
+  "contact": {
+    "email": "la.bouquin@gmail.com",
+    "phone": "+336 15 02 76 13",
+    "address": "1690 Chemin d'Eguilles, 13090 Aix-En-Provence, France"
+  },
+  "professional_summary": "Senior Technical Manager with 18 years of experience in SAP development and project management. Expert in ABAP, S/4 HANA, and SAP Business Technology Platform. Advanced skills in team leadership, quality control, and implementation of innovative solutions in complex and multicultural environments.",
+  "key_skills": {
+    "SAP_ECC": [
+      { "title": "Classic ABAP Object", "description": "ALV, BAdI, user-exit, Enhancement, LSMW, Batch-Input, BAPI, IDOCs" },
+      { "title": "New ABAP syntax (>= 7.40)", "description": "new Open SQL, constructor expression, method chaining" },
+      { "title": "Form development", "description": "ADOBE Interactive forms, Smartforms" },
+      { "title": "Classic SAP web development", "description": "ITS and ITS Mobile, Webdynpro ABAP" }
+    ],
+    "S4_HANA": [
+      "ABAP Core Data Services for Fiori applications, Analytics, and data model creation",
+      "OData services and REST web service interfaces",
+      "Fiori \"freestyle\" applications (SAPUI5) and Fiori elements (List report, Object Page, Analytical Page, Overview Page)",
+      "BOPF and Restful Application Programming Model (RAP)",
+      "SAP NetWeaver Gateway administration (service activation, tile creation)",
+      "S/4 Embedded Analytics: KPI, Analysis Path Framework, Multidimensional reporting"
+    ],
+    "SAP_Business_Technology_Platform": [
+      "SAP Cloud Connector for secure integration between on-premise and cloud systems",
+      "Fiori Cloud Launchpad / Workzone for creating customized enterprise portals",
+      "SAP Cloud Identity for identity and access management",
+      "Fiori applications (webIDE fullstack / Business Application Studio)",
+      "Theme designer for user interface customization",
+      "SAP Cloud Integration for process and data integration",
+      "ABAP BTP Environment for cloud-native development"
+    ]
+  },
+  "professional_experience": [
+    {
+      "company": "Viseo",
+      "position": "Senior Technical Manager",
+      "period": "2022 - Present",
+      "duration": "2 years",
+      "responsibilities": [
+        "Technical leadership of major SAP projects",
+        "Strategic consulting on adoption of innovative SAP technologies"
+      ]
+    },
+    {
+      "company": "Progress Management",
+      "position": "Senior Technical Manager",
+      "period": "2016 - 2022",
+      "duration": "6 years",
+      "responsibilities": [
+        "Responsible for the development team (12 developers)",
+        "Driving skill enhancement in SAP technologies",
+        "Implementation of development best practices and quality controls",
+        "Management of major projects for leading clients"
+      ]
+    },
+    {
+      "company": "Progress Management",
+      "position": "Technical Consultant then Senior Technical Consultant",
+      "period": "2009 - 2016",
+      "duration": "7 years",
+      "responsibilities": [
+        "Development and implementation of SAP solutions for various clients",
+        "Technical expertise on large-scale projects across different sectors"
+      ]
+    },
+    {
+      "company": "BT Consulting",
+      "position": "Technical Consultant",
+      "period": "2007 - 2009",
+      "duration": "2 years",
+      "responsibilities": [
+        "Career start as SAP consultant",
+        "Participation in SAP migration and implementation projects"
+      ]
+    }
+  ],
+  "significant_projects": [
+    {
+      "client": "Rémy Cointreau",
+      "year": 2024,
+      "duration": "4 months",
+      "description": "Development of a container/truck loading simulation application on ABAP BTP",
+      "technologies": [
+        "ABAP Cloud (RAP)",
+        "Fiori Freestyle",
+        "PTV Logistics API"
+      ],
+      "achievements": [
+        "Prototyping with Figma for optimal user experience",
+        "Development of a 3D interface for loading visualization",
+        "Integration with S/4HANA via OData API and communication arrangements",
+        "Logistics optimization through PTV Logistics API integration"
+      ]
+    },
+    {
+      "client": "Rémy Cointreau",
+      "year": 2023,
+      "duration": "4 months",
+      "description": "Development of a catalog management and POSM order-taking application on ABAP BTP",
+      "technologies": [
+        "ABAP Cloud (RAP)",
+        "Fiori Elements"
+      ],
+      "achievements": [
+        "Application design and prototyping with Figma",
+        "Backend development in ABAP Cloud using the RAP model",
+        "Seamless integration with S/4HANA via OData API",
+        "Implementation of an optimized ordering process for POSM items"
+      ]
+    },
+    {
+      "client": "Intermarché",
+      "period": "2020-2024",
+      "duration": "4 years",
+      "description": "S/4 HANA 1909 implementation for the Home Equipment sector",
+      "technologies": [
+        "S/4 HANA",
+        "Fiori",
+        "SAPUI5",
+        "Embedded Analytics"
+      ],
+      "achievements": [
+        "Development of mobile applications for points of sale (SAPUI5/Fiori with Cordova plugin)",
+        "Creation of Fiori Elements applications based on CDS/BOPF",
+        "Implementation of Embedded Analytics solutions for reporting",
+        "Development of REST and OData web service interfaces",
+        "Implementation of In-App extensions to customize standard functionalities"
+      ]
+    },
+    {
+      "client": "Nutrixo",
+      "year": 2015,
+      "duration": "1 year",
+      "description": "SAP HANA implementation for finance and logistics modules",
+      "technologies": [
+        "SAP HANA",
+        "Fiori",
+        "ABAP"
+      ],
+      "achievements": [
+        "Full-stack development of a Fiori application for telesales order-taking",
+        "Integration of Vistex add-on for promotions management",
+        "Optimization of financial and logistics processes"
+      ]
+    },
+    {
+      "client": "RG Safety",
+      "year": 2014,
+      "duration": "1 year",
+      "description": "SAP system conversion to HANA",
+      "technologies": [
+        "SAP HANA",
+        "SAP Cloud Platform",
+        "Fiori"
+      ],
+      "achievements": [
+        "Development of 10 Fiori applications on SAP Cloud Platform",
+        "Implementation of a customer portal for order management and equipment maintenance",
+        "Complete administration of the cloud environment (Cloud Connector, Fiori Launchpad, SAP Cloud Identity)"
+      ]
+    },
+    {
+      "client": "Picard Surgelés",
+      "period": "2009-2011",
+      "duration": "2 years",
+      "description": "SAP Retail implementation",
+      "technologies": [
+        "SAP Retail",
+        "ABAP",
+        "ADOBE Interactive Forms"
+      ],
+      "achievements": [
+        "Development of specific interfaces for integration with existing systems",
+        "Creation of ADOBE interactive forms and automation of email sending",
+        "Evolution of SAP Retail Store functionalities with creation of custom HTML screens"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Software Engineering and Services Degree",
+      "institution": "Ecole Supérieure d'Ingénieurs d'Annecy",
+      "year": 2006
+    },
+    {
+      "degree": "DUT in Electrical Engineering and Industrial Computing",
+      "institution": "IUT 1, Université Joseph Fourier Grenoble",
+      "year": 2003
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "activity": "Volleyball",
+      "description": "Regular club player, developing teamwork and communication skills"
+    },
+    {
+      "activity": "Skiing",
+      "description": "Passion for winter sports, enjoying challenges and nature in the mountains"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+	"listContent": {
+        "photoCard": {
+			"sap.app": {
+				"id": "lab.PresentationSite.PhotoCard"
+			},
+			"sap.card": {
+                "type": "Object",
+                "data": {
+                    "request": {
+                        "url": "/dataSources/english-cv.json"
+                    }
+                },
+                "headerPosition": "Top",
+                "header": {
+                    "title": "{/name}"
+                },
+                "content": {
+                    "groups": [
+                        {
+                            
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "src": "./Pictures/Moi.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }	
+		},
+		"infoCard": {
+			"sap.app": {
+				"id": "idInfoCard"
+			},
+			"sap.card": {
+				"type": "Object",
+                "data": {
+                    "request": {
+                        "url": "/dataSources/english-cv.json"
+                    }
+                },
+				"header": {
+                    "icon": {
+                        "src": "sap-icon://business-card"
+                    },
+                    "title": "{i18n>workSince} {= format.date( ${/start_experience_date} ) }",
+                    "subTitle": "{i18n>born} {= format.dateTime(${/birth_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }"
+				},
+                "content": {
+                    "groups": [
+                        {
+                            "title": "{{contactDetails}}",
+                            "items": [
+                                {
+                                    "label": "{{phone}}",
+                                    "value": "{/contact/phone}",
+                                    "actions": [
+                                        {
+                                            "type": "Navigation",
+                                            "parameters": {
+                                                "url": "tel:{/contact/phone}"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "{{email}}",
+                                    "value": "{/contact/email}",
+                                    "actions": [
+                                        {
+                                            "type": "Navigation",
+                                            "parameters": {
+                                                "url": "mailto:{/contact/email}"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "{{address}}",
+                                    "value": "{/contact/address}"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "{{summary}}",
+                            "items": [
+                                {
+                                     "value": "{/professional_summary}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+			}
+		},
+        "keySkills": {
+			"sap.app": {
+				"id": "idInfoCard"
+			},
+			"sap.card": {
+				"type": "List",
+                "data": {
+                    "request": {
+                        "url": "/dataSources/english-cv.json"
+                    }
+                },
+				"header": {
+                    "icon": {
+                        "src": "sap-icon://key"
+                    },
+                    "title": "ECC",
+                    "subTitle": "{i18n>keySkills}"
+				},
+                "content": {
+                    "data": { "json": "{/key_skills/SAP_ECC/}" },
+                    "maxItems": 5,
+                    "item": {
+                        "title": "{title}",
+                        "description": "{description}",
+                        "icon": {
+                            "src": "{Icon}"
+                        }
+                    }
+                }
+			}
+		}
+	}
+}
