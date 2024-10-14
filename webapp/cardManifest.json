@@ -22,7 +22,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "webapp/Pictures/Moi.png"
+                                    "src": "Pictures/Moi.png"
                                 }
                             ]
                         }
