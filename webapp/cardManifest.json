@@ -2,7 +2,7 @@
 	"listContent": {
         "photoCard": {
 			"sap.app": {
-				"id": "lab.PresentationSite.PhotoCard"
+				"id": "idPhotoCard"
 			},
 			"sap.card": {
                 "type": "Object",
