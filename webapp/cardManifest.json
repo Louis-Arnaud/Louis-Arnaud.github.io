@@ -8,7 +8,7 @@
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "webapp/dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
