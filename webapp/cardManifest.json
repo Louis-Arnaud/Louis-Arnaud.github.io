@@ -17,12 +17,11 @@
                 },
                 "content": {
                     "groups": [
-                        {
-                            
+                        {                            
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "Pictures/Moi.png"
+                                    "src": "webapp/Pictures/Moi.png"
                                 }
                             ]
                         }
