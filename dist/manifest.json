@@ -61,18 +61,18 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "lab.PresentationSite.i18n.i18n"
+                    "bundleName": "./i18n/i18n"
                 }
             },
             "": {
                 "type": "sap.ui.model.json.JSONModel",
-                "uri": "dataSources/english-cv.json"
+                "uri": "./dataSources/english-cv.json"
             }
         },
         "resources": {
             "css": [
                 {
-                    "uri": "css/style.css"
+                    "uri": "./css/style.css"
                 }
             ]
         },
