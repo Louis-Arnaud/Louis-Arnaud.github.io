@@ -1,0 +1,1 @@
+{"version":3,"file":"formatter.js","names":["sap","ui","define","QUnit","module","test","assert","ok"],"sources":["formatter-dbg.js"],"mappings":"AAEAA,IAAIC,GAAGC,OAAO,CACb,6CACE,WACF,aAEAC,MAAMC,OAAO,cAEbD,MAAME,KAAK,8BAA+B,SAAUC,GACnDA,EAAOC,GAAG,KACX,EAED","ignoreList":[]}

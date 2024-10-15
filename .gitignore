@@ -15,9 +15,7 @@ AppVariantPreviewPayload.zip
 mergedManifestDescriptor.json
 APIExternalProducer.js
 .*/APIExternalProducer.js
-/dist/
 node_modules/
-dist/
 .scp/
 .env
 Makefile*.mta
