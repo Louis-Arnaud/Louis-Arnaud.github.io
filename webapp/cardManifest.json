@@ -3,13 +3,13 @@
         "photoCard": {
 			"sap.app": {
 				"id": "idPhotoCard",
-                "i18n": "dist/i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
 			},
 			"sap.card": {
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "dist/dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
@@ -22,7 +22,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "./Pictures/Moi.png"
+                                    "src": "Pictures/Moi.png"
                                 }
                             ]
                         }
@@ -33,13 +33,13 @@
 		"infoCard": {
 			"sap.app": {
 				"id": "idInfoCard",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
 			},
 			"sap.card": {
 				"type": "Object",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
 				"header": {
@@ -99,13 +99,13 @@
         "keySkills": {
 			"sap.app": {
 				"id": "idKeySkills",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
 			},
 			"sap.card": {
 				"type": "List",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
 				"header": {
