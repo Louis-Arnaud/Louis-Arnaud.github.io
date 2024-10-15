@@ -9,7 +9,7 @@
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "dataSources/english-cv.json"
+                        "url": "./dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
@@ -39,7 +39,7 @@
 				"type": "Object",
                 "data": {
                     "request": {
-                        "url": "dataSources/english-cv.json"
+                        "url": "./dataSources/english-cv.json"
                     }
                 },
 				"header": {
