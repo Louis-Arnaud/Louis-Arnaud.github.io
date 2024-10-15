@@ -3,7 +3,7 @@
     "sap.app": {
         "id": "lab.PresentationSite",
         "type": "application",
-        "i18n": "./i18n/i18n.properties",
+        "i18n": "dist/i18n/i18n.properties",
         "applicationVersion": {
             "version": "1.0.0"
         },

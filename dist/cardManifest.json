@@ -3,13 +3,13 @@
         "photoCard": {
 			"sap.app": {
 				"id": "idPhotoCard",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "dist/i18n/i18n.properties"
 			},
 			"sap.card": {
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "dist/dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
