@@ -8,7 +8,7 @@
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "webapp/dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
@@ -21,7 +21,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "webapp/Pictures/Moi.png"
+                                    "src": "Pictures/Moi.png"
                                 }
                             ]
                         }
@@ -37,7 +37,7 @@
 				"type": "Object",
                 "data": {
                     "request": {
-                        "url": "webapp/dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
 				"header": {
@@ -102,7 +102,7 @@
 				"type": "List",
                 "data": {
                     "request": {
-                        "url": "webapp/dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
 				"header": {
