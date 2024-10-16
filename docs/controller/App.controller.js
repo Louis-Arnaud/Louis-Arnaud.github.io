@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","lab/PresentationSite/model/formatter"],function(t,e){"use strict";return t.extend("lab.PresentationSite.controller.App",{formatter:e,onInit:function(){}})});
+//# sourceMappingURL=App.controller.js.map
