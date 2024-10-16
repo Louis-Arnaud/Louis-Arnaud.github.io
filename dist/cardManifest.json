@@ -3,18 +3,20 @@
         "photoCard": {
 			"sap.app": {
 				"id": "idPhotoCard",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
 			},
 			"sap.card": {
                 "type": "Object",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
                 "headerPosition": "Top",
                 "header": {
-                    "title": "{/name}"
+                     "title": "{i18n>workSince} {= format.date( ${/start_experience_date} ) }",
+                    "subTitle": "{i18n>born} {= format.dateTime(${/birth_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }"
+                    
                 },
                 "content": {
                     "groups": [
@@ -22,7 +24,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "./Pictures/Moi.png"
+                                    "src": "Pictures/Moi.png"
                                 }
                             ]
                         }
@@ -39,20 +41,19 @@
 				"type": "Object",
                 "data": {
                     "request": {
-                        "url": "./dataSources/english-cv.json"
+                        "url": "dataSources/english-cv.json"
                     }
                 },
 				"header": {
                     "icon": {
                         "src": "sap-icon://business-card"
                     },
-                    "title": "{i18n>workSince} {= format.date( ${/start_experience_date} ) }",
-                    "subTitle": "{i18n>born} {= format.dateTime(${/birth_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }"
+                    "title": "{{contactDetails}}"
 				},
                 "content": {
                     "groups": [
                         {
-                            "title": "{{contactDetails}}",
+                            "title": "{/name}",
                             "items": [
                                 {
                                     "label": "{{phone}}",
@@ -96,10 +97,10 @@
                 }
 			}
 		},
-        "keySkills": {
+        "keySkillsECC": {
 			"sap.app": {
 				"id": "idKeySkills",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
 			},
 			"sap.card": {
 				"type": "List",
@@ -116,8 +117,44 @@
                     "subTitle": "{i18n>keySkills}"
 				},
                 "content": {
-                    "data": { "json": "{/key_skills/SAP_ECC/}" },
-                    "maxItems": 5,
+                    "maxItems": 10,
+                    "data": {
+                        "path": "/key_skills/SAP_ECC/"
+                    },
+                    "item": {
+                        "title": "{title}",
+                        "description": "{description}",
+                        "icon": {
+                            "src": "{Icon}"
+                        }
+                    }
+                }
+			}
+		},
+        "keySkillsS4": {
+			"sap.app": {
+				"id": "idKeySkills",
+                "i18n": "i18n/i18n.properties"
+			},
+			"sap.card": {
+				"type": "List",
+                "data": {
+                    "request": {
+                        "url": "dataSources/english-cv.json"
+                    }
+                },
+				"header": {
+                    "icon": {
+                        "src": "sap-icon://key"
+                    },
+                    "title": "S/4HANA",
+                    "subTitle": "{i18n>keySkills}"
+				},
+                "content": {
+                    "maxItems": 10,
+                    "data": {
+                        "path": "/key_skills/S4_HANA/"
+                    },
                     "item": {
                         "title": "{title}",
                         "description": "{description}",

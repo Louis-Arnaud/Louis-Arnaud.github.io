@@ -45,13 +45,17 @@
 							</w:layoutData>
 						</w:Card>
 
-						<w:Card manifest="{manifests>/listContent/keySkills}">
+						<w:Card manifest="{manifests>/listContent/keySkillsECC}">
 							<w:layoutData>
 								<f:GridContainerItemLayoutData minRows="4" columns="7" />
 							</w:layoutData>
 						</w:Card>
 
-
+						<w:Card manifest="{manifests>/listContent/keySkillsS4}">
+							<w:layoutData>
+								<f:GridContainerItemLayoutData minRows="4" columns="7" />
+							</w:layoutData>
+						</w:Card>
 
 					</f:GridContainer>
 
