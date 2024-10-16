@@ -3,7 +3,7 @@
     "sap.app": {
         "id": "lab.PresentationSite",
         "type": "application",
-        "i18n": "./i18n/i18n.properties",
+        "i18n": "i18n/i18n.properties",
         "applicationVersion": {
             "version": "1.0.0"
         },
@@ -61,12 +61,12 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "./i18n/i18n"
+                    "bundleName": "i18n/i18n"
                 }
             },
             "": {
                 "type": "sap.ui.model.json.JSONModel",
-                "uri": "./dataSources/english-cv.json"
+                "uri": "dataSources/english-cv.json"
             }
         },
         "resources": {

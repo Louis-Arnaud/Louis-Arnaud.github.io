@@ -17,12 +17,12 @@
       { "title": "Classic SAP web development", "description": "ITS and ITS Mobile, Webdynpro ABAP" }
     ],
     "S4_HANA": [
-      "ABAP Core Data Services for Fiori applications, Analytics, and data model creation",
-      "OData services and REST web service interfaces",
-      "Fiori \"freestyle\" applications (SAPUI5) and Fiori elements (List report, Object Page, Analytical Page, Overview Page)",
-      "BOPF and Restful Application Programming Model (RAP)",
-      "SAP NetWeaver Gateway administration (service activation, tile creation)",
-      "S/4 Embedded Analytics: KPI, Analysis Path Framework, Multidimensional reporting"
+      { "title": "ABAP Core Data Services", "description": "for Fiori applications, Analytics, and virtual data model creation" },
+      { "title": "REST Services", "description": "OData services and REST services" },
+      { "title": "Fiori \"freestyle\" applications", "description": "SAPUI5" },
+      { "title": "Fiori elements", "description": "List report, Object Page, Analytical Page, Overview Page" },
+      { "title": "SAP NetWeaver Gateway administration", "description": "service activation, tile creation" },
+      { "title": "S/4 Embedded Analytics", "description": "KPI, Analysis Path Framework, Multidimensional reporting" }
     ],
     "SAP_Business_Technology_Platform": [
       "SAP Cloud Connector for secure integration between on-premise and cloud systems",
