@@ -3,7 +3,7 @@
         "photoCard": {
 			"sap.app": {
 				"id": "idPhotoCard",
-                "i18n": "i18n/i18n.properties"
+                "i18n": "./i18n/i18n.properties"
 			},
 			"sap.card": {
                 "type": "Object",
@@ -22,7 +22,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "/Pictures/Moi.png"
+                                    "src": "./Pictures/Moi.png"
                                 }
                             ]
                         }
@@ -33,7 +33,7 @@
 		"infoCard": {
 			"sap.app": {
 				"id": "idInfoCard",
-                "i18n": "i18n/i18n.properties"
+                "i18n": "./i18n/i18n.properties"
 			},
 			"sap.card": {
 				"type": "Object",
@@ -99,7 +99,7 @@
         "keySkills": {
 			"sap.app": {
 				"id": "idKeySkills",
-                "i18n": "i18n/i18n.properties"
+                "i18n": "./i18n/i18n.properties"
 			},
 			"sap.card": {
 				"type": "List",
