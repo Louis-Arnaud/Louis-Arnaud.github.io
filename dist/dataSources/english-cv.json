@@ -25,13 +25,11 @@
       { "title": "S/4 Embedded Analytics", "description": "KPI, Analysis Path Framework, Multidimensional reporting" }
     ],
     "SAP_Business_Technology_Platform": [
-      "SAP Cloud Connector for secure integration between on-premise and cloud systems",
-      "Fiori Cloud Launchpad / Workzone for creating customized enterprise portals",
-      "SAP Cloud Identity for identity and access management",
-      "Fiori applications (webIDE fullstack / Business Application Studio)",
-      "Theme designer for user interface customization",
-      "SAP Cloud Integration for process and data integration",
-      "ABAP BTP Environment for cloud-native development"
+      { "title": "SAP Cloud Connector", "description": "for secure integration between on-premise and cloud systems" },
+      { "title": "Fiori Cloud Launchpad / Workzone", "description": "for creating customized enterprise portals" },
+      { "title": "Fiori applications development", "description": " with webIDE fullstack and Business Application Studio" },
+      { "title": "Theme designer", "description": "for user interface customization" },
+      { "title": "ABAP BTP Environment", "description": "for cloud-native development" }
     ]
   },
   "professional_experience": [

@@ -14,7 +14,7 @@
                 },
                 "headerPosition": "Top",
                 "header": {
-                     "title": "{i18n>workSince} {= format.date( ${/start_experience_date} ) }",
+                     "title": "{i18n>workSince} {= format.dateTime(${/start_experience_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }",
                     "subTitle": "{i18n>born} {= format.dateTime(${/birth_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }"
                     
                 },
@@ -24,7 +24,7 @@
                             "items": [
                                 {
                                     "type": "Image",
-                                    "src": "Pictures/Moi.png"
+                                    "src": "Pictures/Moi.jpg"
                                 }
                             ]
                         }
@@ -111,7 +111,7 @@
                 },
 				"header": {
                     "icon": {
-                        "src": "sap-icon://key"
+                        "src": "Pictures/SAP ECC.jpg"
                     },
                     "title": "ECC",
                     "subTitle": "{i18n>keySkills}"
@@ -125,7 +125,7 @@
                         "title": "{title}",
                         "description": "{description}",
                         "icon": {
-                            "src": "{Icon}"
+                            "src": "sap-icon://favorite"
                         }
                     }
                 }
@@ -145,7 +145,7 @@
                 },
 				"header": {
                     "icon": {
-                        "src": "sap-icon://key"
+                        "src": "Pictures/SAP S4HANA.png"
                     },
                     "title": "S/4HANA",
                     "subTitle": "{i18n>keySkills}"
@@ -159,7 +159,41 @@
                         "title": "{title}",
                         "description": "{description}",
                         "icon": {
-                            "src": "{Icon}"
+                            "src": "sap-icon://favorite"
+                        }
+                    }
+                }
+			}
+		},
+        "keySkillsBTP": {
+			"sap.app": {
+				"id": "idKeySkills",
+                "i18n": "i18n/i18n.properties"
+			},
+			"sap.card": {
+				"type": "List",
+                "data": {
+                    "request": {
+                        "url": "dataSources/english-cv.json"
+                    }
+                },
+				"header": {
+                    "icon": {
+                        "src": "Pictures/SAP BTP.jpeg"
+                    },
+                    "title": "SAP Business Technology Platform",
+                    "subTitle": "{i18n>keySkills}"
+				},
+                "content": {
+                    "maxItems": 10,
+                    "data": {
+                        "path": "/key_skills/SAP_Business_Technology_Platform/"
+                    },
+                    "item": {
+                        "title": "{title}",
+                        "description": "{description}",
+                        "icon": {
+                            "src": "sap-icon://favorite"
                         }
                     }
                 }
