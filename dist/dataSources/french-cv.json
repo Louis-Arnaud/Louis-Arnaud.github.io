@@ -1,0 +1,213 @@
+{
+    "name": "Louis-Arnaud BOUQUIN",
+    "title": "Développeur SAP et Chef d'Équipe @ VISEO",
+    "birth_date": "1983-10-03",
+    "start_experience_date": "2006-09-01",
+    "contact": {
+      "email": "la.bouquin@gmail.com",
+      "phone": "+33 6 15 02 76 13",
+      "address": "1690 Chemin d'Eguilles, 13090 Aix-En-Provence, France"
+    },
+    "professional_summary": "Manager Technique Senior avec 18 ans d'expérience en développement SAP et pilotage d'équipe. Expert en ABAP et SAPUI5 sur SAP S/4 HANA et SAP Business Technology Platform. Compétences avancées en leadership d'équipe, contrôle qualité et mise en œuvre de solutions innovantes dans des environnements complexes.",
+    "key_skills": {
+      "SAP_ECC": [
+        { "title": "ABAP Objet classique", "description": "ALV, BAdI, user-exit, Enhancement, LSMW, Batch-Input, BAPI, IDOCs" },
+        { "title": "Nouvelle syntaxe ABAP (>= 7.40)", "description": "nouveau Open SQL, expression de constructeur, chaînage de méthodes" },
+        { "title": "Développement de formulaires", "description": "Formulaires interactifs ADOBE, Smartforms" },
+        { "title": "Développement web SAP classique", "description": "ITS et ITS Mobile, Webdynpro ABAP" }
+      ],
+      "S4_HANA": [
+        { "title": "ABAP Core Data Services", "description": "pour applications Fiori, Analytics, et création de modèles de données virtuels" },
+        { "title": "Services REST", "description": "services OData et services REST" },
+        { "title": "Applications Fiori \"freestyle\"", "description": "SAPUI5" },
+        { "title": "Fiori elements", "description": "Rapport de liste, Page d'objet, Page analytique, Page de vue d'ensemble" },
+        { "title": "Administration SAP NetWeaver Gateway", "description": "activation de service, création de tuiles" },
+        { "title": "S/4 Embedded Analytics", "description": "KPI, Analysis Path Framework, Reporting multidimensionnel" }
+      ],
+      "SAP_Business_Technology_Platform": [
+        { "title": "SAP Cloud Connector", "description": "pour une intégration sécurisée entre les systèmes on-premise et cloud" },
+        { "title": "Fiori Cloud Launchpad / Workzone", "description": "pour la création de portails d'entreprise personnalisés" },
+        { "title": "Développement d'applications Fiori", "description": "avec webIDE fullstack et Business Application Studio" },
+        { "title": "Theme designer", "description": "pour la personnalisation de l'interface utilisateur" },
+        { "title": "Environnement ABAP BTP", "description": "pour le développement natif cloud" }
+      ]
+    },
+    "professional_experience": [
+      {
+        "entreprise": "Viseo",
+        "poste": "Responsable Technique Senior",
+        "periode": "2022 - Présent",
+        "duree": "2 ans",
+        "responsabilites": [
+          "Leadership technique de projets SAP majeurs",
+          "Conseil stratégique sur l'adoption de technologies SAP innovantes"
+        ]
+      },
+      {
+        "entreprise": "Progress Management",
+        "poste": "Responsable Technique Senior",
+        "periode": "2016 - 2022",
+        "duree": "6 ans",
+        "responsabilites": [
+          "Responsable de l'équipe de développement (12 développeurs)",
+          "Pilotage du renforcement des compétences en technologies SAP",
+          "Mise en place de bonnes pratiques de développement et de contrôles qualité",
+          "Gestion de projets majeurs pour des clients de premier plan"
+        ]
+      },
+      {
+        "entreprise": "Progress Management",
+        "poste": "Consultant Technique puis Consultant Technique Senior",
+        "periode": "2009 - 2016",
+        "duree": "7 ans",
+        "responsabilites": [
+          "Développement et mise en œuvre de solutions SAP pour divers clients",
+          "Expertise technique sur des projets d'envergure dans différents secteurs"
+        ]
+      },
+      {
+        "entreprise": "BT Consulting",
+        "poste": "Consultant Technique",
+        "periode": "2007 - 2009",
+        "duree": "2 ans",
+        "responsabilites": [
+          "Début de carrière en tant que consultant SAP",
+          "Participation à des projets de migration et d'implémentation SAP"
+        ]
+      }
+    ],
+    "significant_projects": [
+      {
+        "client": "Rémy Cointreau",
+        "annee": 2024,
+        "duree": "4 mois",
+        "description": "Développement d'une application de simulation de chargement de conteneurs/camions sur ABAP BTP",
+        "technologies": [
+          "ABAP Cloud (RAP)",
+          "Fiori Freestyle",
+          "API PTV Logistics"
+        ],
+        "realisations": [
+          "Prototypage avec Figma pour une expérience utilisateur optimale",
+          "Développement d'une interface 3D pour la visualisation du chargement",
+          "Intégration avec S/4HANA via API OData et arrangements de communication",
+          "Optimisation logistique grâce à l'intégration de l'API PTV Logistics"
+        ]
+      },
+      {
+        "client": "Rémy Cointreau",
+        "annee": 2023,
+        "duree": "4 mois",
+        "description": "Développement d'une application de gestion de catalogue et de prise de commande POSM sur ABAP BTP",
+        "technologies": [
+          "ABAP Cloud (RAP)",
+          "Fiori Elements"
+        ],
+        "realisations": [
+          "Conception et prototypage de l'application avec Figma",
+          "Développement backend en ABAP Cloud utilisant le modèle RAP",
+          "Intégration transparente avec S/4HANA via API OData",
+          "Mise en place d'un processus de commande optimisé pour les articles POSM"
+        ]
+      },
+      {
+        "client": "Intermarché",
+        "periode": "2020-2024",
+        "duree": "4 ans",
+        "description": "Mise en œuvre de S/4 HANA 1909 pour le secteur Équipement de la Maison",
+        "technologies": [
+          "S/4 HANA",
+          "Fiori",
+          "SAPUI5",
+          "Embedded Analytics"
+        ],
+        "realisations": [
+          "Développement d'applications mobiles pour les points de vente (SAPUI5/Fiori avec plugin Cordova)",
+          "Création d'applications Fiori Elements basées sur CDS/BOPF",
+          "Mise en place de solutions Embedded Analytics pour le reporting",
+          "Développement d'interfaces de services web REST et OData",
+          "Mise en œuvre d'extensions In-App pour personnaliser les fonctionnalités standard"
+        ]
+      },
+      {
+        "client": "Nutrixo",
+        "annee": 2015,
+        "duree": "1 an",
+        "description": "Mise en œuvre de SAP HANA pour les modules finance et logistique",
+        "technologies": [
+          "SAP HANA",
+          "Fiori",
+          "ABAP"
+        ],
+        "realisations": [
+          "Développement full-stack d'une application Fiori pour la prise de commande en télévente",
+          "Intégration de l'add-on Vistex pour la gestion des promotions",
+          "Optimisation des processus financiers et logistiques"
+        ]
+      },
+      {
+        "client": "RG Safety",
+        "annee": 2014,
+        "duree": "1 an",
+        "description": "Conversion du système SAP vers HANA",
+        "technologies": [
+          "SAP HANA",
+          "SAP Cloud Platform",
+          "Fiori"
+        ],
+        "realisations": [
+          "Développement de 10 applications Fiori sur SAP Cloud Platform",
+          "Mise en place d'un portail client pour la gestion des commandes et la maintenance des équipements",
+          "Administration complète de l'environnement cloud (Cloud Connector, Fiori Launchpad, SAP Cloud Identity)"
+        ]
+      },
+      {
+        "client": "Picard Surgelés",
+        "periode": "2009-2011",
+        "duree": "2 ans",
+        "description": "Mise en œuvre de SAP Retail",
+        "technologies": [
+          "SAP Retail",
+          "ABAP",
+          "Formulaires interactifs ADOBE"
+        ],
+        "realisations": [
+          "Développement d'interfaces spécifiques pour l'intégration avec les systèmes existants",
+          "Création de formulaires interactifs ADOBE et automatisation de l'envoi d'e-mails",
+          "Évolution des fonctionnalités SAP Retail Store avec création d'écrans HTML personnalisés"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "diplome": "Diplôme d'Ingénieur en Génie Logiciel et Services",
+        "etablissement": "École Supérieure d'Ingénieurs d'Annecy",
+        "annee": 2006
+      },
+      {
+        "diplome": "DUT en Génie Électrique et Informatique Industrielle",
+        "etablissement": "IUT 1, Université Joseph Fourier Grenoble",
+        "annee": 2003
+      }
+    ],
+    "languages": [
+      {
+        "langue": "Français",
+        "niveau": "Langue maternelle"
+      },
+      {
+        "langue": "Anglais",
+        "niveau": "Niveau professionnel"
+      }
+    ],
+    "interests": [
+      {
+        "activite": "Volleyball",
+        "description": "Joueur régulier en club, développant les compétences de travail d'équipe et de communication"
+      },
+      {
+        "activite": "Ski",
+        "description": "Passion pour les sports d'hiver, appréciant les défis et la nature en montagne"
+      }
+    ]
+  }

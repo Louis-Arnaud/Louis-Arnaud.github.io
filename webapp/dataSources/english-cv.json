@@ -5,10 +5,10 @@
   "start_experience_date": "2006-09-01",
   "contact": {
     "email": "la.bouquin@gmail.com",
-    "phone": "+336 15 02 76 13",
+    "phone": "+33 6 15 02 76 13",
     "address": "1690 Chemin d'Eguilles, 13090 Aix-En-Provence, France"
   },
-  "professional_summary": "Senior Technical Manager with 18 years of experience in SAP development and project management. Expert in ABAP, S/4 HANA, and SAP Business Technology Platform. Advanced skills in team leadership, quality control, and implementation of innovative solutions in complex and multicultural environments.",
+  "professional_summary": "Senior Technical Manager with 18 years of experience in SAP development and team leadership. Expert in ABAP and SAPUI5 on SAP S/4 HANA and SAP Business Technology Platform. Advanced skills in team leadership, quality control, and implementation of innovative solutions in complex environments.",
   "key_skills": {
     "SAP_ECC": [
       { "title": "Classic ABAP Object", "description": "ALV, BAdI, user-exit, Enhancement, LSMW, Batch-Input, BAPI, IDOCs" },

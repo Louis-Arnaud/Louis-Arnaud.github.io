@@ -14,8 +14,11 @@ sap.ui.define([
 
 		onInit: function () {
 
-			var oCardManifests = new JSONModel(sap.ui.require.toUrl("lab/PresentationSite/cardManifest.json"));
-			this.getView().setModel(oCardManifests, "manifests");
+			// get default user language
+			let sDefaultLanguage = navigator.language || navigator.userLanguage;
+
+		    // Init cards with default language
+			this._changeLanguage(sDefaultLanguage);
 
 			// shortcut for sap.ui.core.dnd.DropLayout
 			var DropLayout = coreLibrary.dnd.DropLayout;
@@ -70,36 +73,14 @@ sap.ui.define([
 
 		},
 
-		OnAvatarPress: function (oEvent) {
+		_changeLanguage(sSelectedLang) {
 
-			var sImageUrl = this.getView().getModel().getProperty("/Infos/FullPictureUrl");
+			let manifestFile = sSelectedLang === 'fr-FR' ? 'cardManifest-fr.json' : 'cardManifest.json';
 
-			var oImageDialog = new sap.m.LightBox();
+			let oCardManifests = new JSONModel(sap.ui.require.toUrl("lab/PresentationSite/" + manifestFile));
+			this.getView().setModel(oCardManifests, "manifests");
 
-			oImageDialog.addImageContent(
-				new sap.m.LightBoxItem({
-					imageSrc: sImageUrl
-				})
-			);
-			oImageDialog.open();
-
-		},
-
-		OnCompanyPress: function (oEvent) {
-			var oWorkExperience = oEvent.getSource().getBinding("src").getContext().getObject();
-			if (oWorkExperience.Website !== "") {
-				window.location.replace(oWorkExperience.Website);
-			}
-		},
-
-		goToGithubPage: function (oEvent) {
-			window.location.replace("https://github.com/Louis-Arnaud");
-		},
-		goToSapProfile: function (oEvent) {
-			window.location.replace("https://people.sap.com/lab_pm");
-		},
-		goToTwitterProfile: function (oEvent) {
-			window.location.replace("https://twitter.com/LAB_SAP");
 		}
+
 	});
 });

@@ -1,11 +1,11 @@
 {
-	"listContent": {
+    "listContent": {
         "photoCard": {
-			"sap.app": {
-				"id": "idPhotoCard",
+            "sap.app": {
+                "id": "idPhotoCard",
                 "i18n": "i18n/i18n.properties"
-			},
-			"sap.card": {
+            },
+            "sap.card": {
                 "type": "Object",
                 "data": {
                     "request": {
@@ -14,13 +14,15 @@
                 },
                 "headerPosition": "Top",
                 "header": {
-                     "title": "{i18n>workSince} {= format.dateTime(${/start_experience_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }",
+                    "icon": {
+                        "src": "sap-icon://camera"
+                    },
+                    "title": "{i18n>workSince} {= format.dateTime(${/start_experience_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }",
                     "subTitle": "{i18n>born} {= format.dateTime(${/birth_date}, {relative: true, relativeStyle: 'wide', relativeScale: 'auto' }) }"
-                    
                 },
                 "content": {
                     "groups": [
-                        {                            
+                        {
                             "items": [
                                 {
                                     "type": "Image",
@@ -30,26 +32,26 @@
                         }
                     ]
                 }
-            }	
-		},
-		"infoCard": {
-			"sap.app": {
-				"id": "idInfoCard",
+            }
+        },
+        "infoCard": {
+            "sap.app": {
+                "id": "idInfoCard",
                 "i18n": "./i18n/i18n.properties"
-			},
-			"sap.card": {
-				"type": "Object",
+            },
+            "sap.card": {
+                "type": "Object",
                 "data": {
                     "request": {
                         "url": "dataSources/english-cv.json"
                     }
                 },
-				"header": {
+                "header": {
                     "icon": {
                         "src": "sap-icon://business-card"
                     },
                     "title": "{{contactDetails}}"
-				},
+                },
                 "content": {
                     "groups": [
                         {
@@ -84,38 +86,62 @@
                                     "value": "{/contact/address}"
                                 }
                             ]
-                        },
-                        {
-                            "title": "{{summary}}",
-                            "items": [
-                                {
-                                     "value": "{/professional_summary}"
-                                }
-                            ]
                         }
                     ]
                 }
-			}
-		},
-        "keySkillsECC": {
-			"sap.app": {
-				"id": "idKeySkills",
-                "i18n": "i18n/i18n.properties"
-			},
-			"sap.card": {
-				"type": "List",
+            }
+        },
+        "resumeCard": {
+            "sap.app": {
+                "id": "idResumeCard",
+                "i18n": "./i18n/i18n.properties"
+            },
+            "sap.card": {
+                "type": "Object",
                 "data": {
                     "request": {
                         "url": "dataSources/english-cv.json"
                     }
                 },
-				"header": {
+                "header": {
+                    "icon": {
+                        "src": "sap-icon://shortcut"
+                    },
+                    "title": "{/title}"
+                },
+                "content": {
+                    "groups": [
+                        {
+                            "title": "{{summary}}",
+                            "items": [
+                                {
+                                    "value": "{/professional_summary}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "keySkillsECC": {
+            "sap.app": {
+                "id": "idKeySkills",
+                "i18n": "i18n/i18n.properties"
+            },
+            "sap.card": {
+                "type": "List",
+                "data": {
+                    "request": {
+                        "url": "dataSources/english-cv.json"
+                    }
+                },
+                "header": {
                     "icon": {
                         "src": "Pictures/SAP ECC.jpg"
                     },
                     "title": "ECC",
                     "subTitle": "{i18n>keySkills}"
-				},
+                },
                 "content": {
                     "maxItems": 10,
                     "data": {
@@ -129,27 +155,27 @@
                         }
                     }
                 }
-			}
-		},
+            }
+        },
         "keySkillsS4": {
-			"sap.app": {
-				"id": "idKeySkills",
+            "sap.app": {
+                "id": "idKeySkills",
                 "i18n": "i18n/i18n.properties"
-			},
-			"sap.card": {
-				"type": "List",
+            },
+            "sap.card": {
+                "type": "List",
                 "data": {
                     "request": {
                         "url": "dataSources/english-cv.json"
                     }
                 },
-				"header": {
+                "header": {
                     "icon": {
                         "src": "Pictures/SAP S4HANA.png"
                     },
                     "title": "S/4HANA",
                     "subTitle": "{i18n>keySkills}"
-				},
+                },
                 "content": {
                     "maxItems": 10,
                     "data": {
@@ -163,27 +189,27 @@
                         }
                     }
                 }
-			}
-		},
+            }
+        },
         "keySkillsBTP": {
-			"sap.app": {
-				"id": "idKeySkills",
+            "sap.app": {
+                "id": "idKeySkills",
                 "i18n": "i18n/i18n.properties"
-			},
-			"sap.card": {
-				"type": "List",
+            },
+            "sap.card": {
+                "type": "List",
                 "data": {
                     "request": {
                         "url": "dataSources/english-cv.json"
                     }
                 },
-				"header": {
+                "header": {
                     "icon": {
                         "src": "Pictures/SAP BTP.jpeg"
                     },
                     "title": "SAP Business Technology Platform",
                     "subTitle": "{i18n>keySkills}"
-				},
+                },
                 "content": {
                     "maxItems": 10,
                     "data": {
@@ -197,7 +223,7 @@
                         }
                     }
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 }
