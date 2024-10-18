@@ -37,7 +37,7 @@
         "infoCard": {
             "sap.app": {
                 "id": "idInfoCard",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
             },
             "sap.card": {
                 "type": "Object",
@@ -94,7 +94,7 @@
         "resumeCard": {
             "sap.app": {
                 "id": "idResumeCard",
-                "i18n": "./i18n/i18n.properties"
+                "i18n": "i18n/i18n.properties"
             },
             "sap.card": {
                 "type": "Object",
@@ -120,6 +120,40 @@
                             ]
                         }
                     ]
+                }
+            }
+        },
+        "education": {
+            "sap.app": {
+                "id": "idEducation",
+                "i18n": "i18n/i18n.properties"
+            },
+            "sap.card": {
+                "type": "List",
+                "data": {
+                    "request": {
+                        "url": "dataSources/french-cv.json"
+                    }
+                },
+                "header": {
+                    "icon": {
+                        "src": "sap-icon://education"
+                    },
+                    "title": "{i18n>education}",
+                    "subTitle": ""
+                },
+                "content": {
+                    "maxItems": 10,
+                    "data": {
+                        "path": "/education/"
+                    },
+                    "item": {
+                        "title": "{year} : {degree}",
+                        "description": "{institution}",
+                        "icon": {
+                            "src": "sap-icon://study-leave"
+                        }
+                    }
                 }
             }
         },

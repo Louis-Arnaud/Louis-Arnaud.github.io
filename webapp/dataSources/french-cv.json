@@ -180,33 +180,33 @@
     ],
     "education": [
       {
-        "diplome": "Diplôme d'Ingénieur en Génie Logiciel et Services",
-        "etablissement": "École Supérieure d'Ingénieurs d'Annecy",
-        "annee": 2006
+        "degree": "Diplôme d'Ingénieur en Génie Logiciel et Services",
+        "institution": "École Supérieure d'Ingénieurs d'Annecy",
+        "year": 2006
       },
       {
-        "diplome": "DUT en Génie Électrique et Informatique Industrielle",
-        "etablissement": "IUT 1, Université Joseph Fourier Grenoble",
-        "annee": 2003
+        "degree": "DUT en Génie Électrique et Informatique Industrielle",
+        "institution": "IUT 1, Université Joseph Fourier Grenoble",
+        "year": 2003
       }
     ],
     "languages": [
       {
-        "langue": "Français",
-        "niveau": "Langue maternelle"
+        "language": "Français",
+        "level": "Langue maternelle"
       },
       {
-        "langue": "Anglais",
-        "niveau": "Niveau professionnel"
+        "language": "Anglais",
+        "level": "Niveau professionnel"
       }
     ],
     "interests": [
       {
-        "activite": "Volleyball",
+        "activity": "Volleyball",
         "description": "Joueur régulier en club, développant les compétences de travail d'équipe et de communication"
       },
       {
-        "activite": "Ski",
+        "activity": "Ski",
         "description": "Passion pour les sports d'hiver, appréciant les défis et la nature en montagne"
       }
     ]

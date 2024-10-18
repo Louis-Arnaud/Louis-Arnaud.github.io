@@ -123,6 +123,82 @@
                 }
             }
         },
+        "configCard": {
+            "sap.app": {
+                "id": "adaptiveSwitchCard",
+                "i18n": "./i18n/i18n.properties"
+            },
+            "sap.card": {
+                "type": "Adaptive",
+                "content": {
+                    "type": "AdaptiveCard",
+                    "body": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{i18n>title}",
+                            "size": "Large"
+                        },
+                        {
+                            "type": "Input.Toggle",
+                            "title": "{i18n>switchLang}",
+                            "valueOn": "fr",
+                            "valueOff": "en",
+                            "id": "langSwitch"
+                        },
+                        {
+                            "type": "Input.Toggle",
+                            "title": "{i18n>switchTheme}",
+                            "valueOn": "Dark",
+                            "valueOff": "Light",
+                            "id": "themeSwitch"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "{i18n>applyChanges}",
+                            "data": {
+                                "action": "applySettings"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "education": {
+            "sap.app": {
+                "id": "idEducation",
+                "i18n": "i18n/i18n.properties"
+            },
+            "sap.card": {
+                "type": "List",
+                "data": {
+                    "request": {
+                        "url": "dataSources/english-cv.json"
+                    }
+                },
+                "header": {
+                    "icon": {
+                        "src": "sap-icon://education"
+                    },
+                    "title": "{i18n>education}",
+                    "subTitle": ""
+                },
+                "content": {
+                    "maxItems": 2,
+                    "data": {
+                        "path": "/education/"
+                    },
+                    "item": {
+                        "title": "{year} : {degree}",
+                        "description": "{institution}",
+                        "icon": {
+                            "src": "sap-icon://study-leave"
+                        }
+                    }
+                }
+            }
+        },
         "keySkillsECC": {
             "sap.app": {
                 "id": "idKeySkills",

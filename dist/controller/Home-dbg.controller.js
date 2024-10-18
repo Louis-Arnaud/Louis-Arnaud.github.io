@@ -17,7 +17,14 @@ sap.ui.define([
 			// get default user language
 			let sDefaultLanguage = navigator.language || navigator.userLanguage;
 
-		    // Init cards with default language
+			let oConfigModel = new JSONModel({
+				language: sDefaultLanguage,
+				theme: "light"
+			});
+
+			this.getView().setModel(oConfigModel, "config");
+
+			// Init cards with default language
 			this._changeLanguage(sDefaultLanguage);
 
 			// shortcut for sap.ui.core.dnd.DropLayout
@@ -73,13 +80,36 @@ sap.ui.define([
 
 		},
 
+		onChangeLanguage: function() {
+
+			let oConfig = this.getView().getModel("config").getProperty("/");
+
+			this._changeLanguage(oConfig.language);
+
+		},
+
+		onChangeTheme: function() {
+
+			let oConfig = this.getView().getModel("config").getProperty("/");
+
+			this._changeTheme(oConfig.theme);
+
+		},
+
 		_changeLanguage(sSelectedLang) {
 
-			let manifestFile = sSelectedLang === 'fr-FR' ? 'cardManifest-fr.json' : 'cardManifest.json';
+			let manifestFile = sSelectedLang.substr(0, 2) === 'fr' ? 'cardManifest-fr.json' : 'cardManifest.json';
 
 			let oCardManifests = new JSONModel(sap.ui.require.toUrl("lab/PresentationSite/" + manifestFile));
 			this.getView().setModel(oCardManifests, "manifests");
+			sap.ui.getCore().getConfiguration().setLanguage(sSelectedLang);
 
+		},
+
+		_changeTheme: function(sTheme) {
+
+			var sThemeName = (sTheme === "dark") ? "sap_horizon_dark" : "sap_horizon";
+			sap.ui.getCore().applyTheme(sThemeName);
 		}
 
 	});
